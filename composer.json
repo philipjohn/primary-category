@@ -1,0 +1,9 @@
+{
+    "name": "philipjohn/test",
+    "type": "project",
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+		"wp-coding-standards/wpcs": "*",
+        "automattic/vipwpcs": "^2.3"
+    }
+}
