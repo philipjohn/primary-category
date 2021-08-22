@@ -1,0 +1,30 @@
+{
+	"name": "primary-category",
+	"version": "0.1.0",
+	"description": "Provides a new \"Primary Category\" setting for individual posts and the ability to filter front-end results by that primary category.",
+	"author": "Philip John",
+	"license": "GPL-2.0-or-later",
+	"main": "webpack.config.js",
+	"scripts": {
+		"test": "npm run start",
+		"start": "webpack --watch",
+		"dev": "webpack --mode development",
+		"build": "webpack --mode production"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.14.8",
+		"@babel/core": "^7.15.0",
+		"@babel/plugin-proposal-class-properties": "^7.14.5",
+		"@babel/preset-env": "^7.15.0",
+		"@babel/preset-react": "^7.14.5",
+		"babel-loader": "^8.2.2",
+		"babel-minify-webpack-plugin": "^0.3.1",
+		"babel-plugin-minify-mangle-names": "^0.5.0",
+		"css-loader": "^6.2.0",
+		"mini-css-extract-plugin": "^2.2.0",
+		"node-sass": "^6.0.1",
+		"sass-loader": "^12.1.0",
+		"webpack": "^5.50.0",
+		"webpack-cli": "^4.8.0"
+	}
+}
