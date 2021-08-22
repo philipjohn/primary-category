@@ -12,12 +12,16 @@ Domain path: languages
 Update URI: https://github.com/philipjohn/primary-category
 */
 
-namespace PJ;
+namespace PJPC;
 
 // No naughtiness, thank you.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
+define( 'PJPC_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+define( 'PJPC_PLUGIN_URL', plugins_url( '/', __FILE__ ) );
+define( 'PJPC_PLUGIN_VERSION', '0.1.0' );
 
 // Require the autoloader to set everything up.
 require_once 'autoload.php';

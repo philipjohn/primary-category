@@ -15,7 +15,7 @@ spl_autoload_register(
 		$root      = array_shift( $namespace );
 
 		// Bail out if we're not in the namespace, even though that would be weird.
-		if ( 'PrimaryCategory' !== $root ) {
+		if ( 'PJPC' !== $root ) {
 			return;
 		}
 
