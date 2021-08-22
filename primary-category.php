@@ -56,6 +56,7 @@ class PrimaryCategory {
 	 */
 	private function __construct() {
 		add_action( 'init', array( $this, 'init' ) );
+		add_action( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
 	}
 
 	/**
@@ -68,5 +69,17 @@ class PrimaryCategory {
 			dirname( plugin_basename( __FILE__ ) ) . '/languages'
 		);
 	}
+
+	/**
+	 * Fires once WordPress has loaded all the plugins. What a surprise.
+	 */
+	public function plugins_loaded() {
+
+		// Set up our editor meta boxes.
+		$this->meta_boxes = new \PJPC\Includes\Meta_Boxes();
+		$this->meta_boxes->run();
+
+	}
+
 }
 PrimaryCategory::get_instance();
