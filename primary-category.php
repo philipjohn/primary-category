@@ -75,6 +75,10 @@ class PrimaryCategory {
 	 */
 	public function plugins_loaded() {
 
+		// Make our scripts happen.
+		$this->admin_enqueue = new \PJPC\Includes\Enqueue();
+		$this->admin_enqueue->run();
+
 		// Set up our editor meta boxes.
 		$this->meta_boxes = new \PJPC\Includes\Meta_Boxes();
 		$this->meta_boxes->run();
