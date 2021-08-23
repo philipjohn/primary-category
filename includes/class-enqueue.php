@@ -51,6 +51,8 @@ class Enqueue {
 	 * @since 0.1.0
 	 */
 	public function wp_enqueue_scripts() {
+		// Only enqueue on the blog home, since that's the only place we want
+		// to filter at the moment.
 		if ( is_home() ) {
 			wp_enqueue_script(
 				'primary-category-dropdown',
@@ -58,6 +60,12 @@ class Enqueue {
 				array(),
 				PJPC_PLUGIN_VERSION,
 				true
+			);
+			wp_enqueue_style(
+				'primary-category-dropdown-style',
+				PJPC_PLUGIN_URL . 'dist/style.css',
+				array(),
+				PJPC_PLUGIN_VERSION
 			);
 		}
 	}
