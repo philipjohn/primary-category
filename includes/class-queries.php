@@ -48,12 +48,12 @@ class Queries {
 				// main query.
 				if ( is_a( $cat, 'WP_Term' ) ) {
 					$query->set(
-						'tax_query',
+						'meta_query',
 						array(
 							array(
-								'taxonomy' => 'category',
-								'field'    => 'id',
-								'terms'    => $cat->term_id,
+								'key'     => '_pjpc_primary_category',
+								'value'   => $cat->term_id,
+								'compare' => '=',
 							),
 						)
 					);
