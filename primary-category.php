@@ -83,6 +83,10 @@ class PrimaryCategory {
 		$this->meta_boxes = new \PJPC\Includes\Meta_Boxes();
 		$this->meta_boxes->run();
 
+		// Filter the queries when a cookie is present.
+		$this->queries = new \PJPC\Includes\Queries();
+		$this->queries->run();
+
 	}
 
 }
