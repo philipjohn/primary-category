@@ -6,6 +6,7 @@ module.exports = [
 		mode: process.env.NODE_ENV,
 		entry: {
 			sidebar: ["./src/js/index.js"],
+			dropdown: ["./src/js/dropdown.js"],
 		},
 		output: {
 			filename: "[name].js",

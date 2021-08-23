@@ -19,12 +19,13 @@ class Enqueue {
 	 */
 	public function run() {
 		add_action( 'enqueue_block_editor_assets', array( $this, 'editor_enqueue_assets' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_scripts' ) );
 	}
 
 	/**
 	 * Enqueue block assets.
 	 *
-	 * @since 1.0.0
+	 * @since 0.1.0
 	 */
 	public function editor_enqueue_assets() {
 
@@ -42,5 +43,22 @@ class Enqueue {
 			'primary-category',
 			PJPC_PLUGIN_DIR . 'languages/'
 		);
+	}
+
+	/**
+	 * Enqueue frontend assets.
+	 *
+	 * @since 0.1.0
+	 */
+	public function wp_enqueue_scripts() {
+		if ( is_home() ) {
+			wp_enqueue_script(
+				'primary-category-dropdown',
+				PJPC_PLUGIN_URL . 'dist/dropdown.js',
+				array(),
+				PJPC_PLUGIN_VERSION,
+				true
+			);
+		}
 	}
 }

@@ -87,6 +87,10 @@ class PrimaryCategory {
 		$this->queries = new \PJPC\Includes\Queries();
 		$this->queries->run();
 
+		// Print our category selector.
+		$this->frontend = new \PJPC\Includes\Frontend();
+		$this->frontend->run();
+
 	}
 
 }
