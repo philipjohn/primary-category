@@ -1,0 +1,39 @@
+# Copyright (C) 2021 Primary Category
+# This file is distributed under the same license as the Primary Category package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Primary Category \n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/primary-category\n"
+"POT-Creation-Date: 2021-08-23 13:11:51+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/class-frontend.php:40
+msgid "Only show content from: "
+msgstr ""
+
+#: includes/class-frontend.php:48
+msgid "All categories"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Primary Category"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Provides a new \"Primary Category\" setting for individual posts and the "
+"ability to filter front-end results by that primary category."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Philip John"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://philipjohn.me.uk"
+msgstr ""
